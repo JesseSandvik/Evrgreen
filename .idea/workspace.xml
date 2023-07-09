@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="524cbf13-9924-4dd6-baab-f06caed3f956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/math/Addition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/math/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/math/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/math/Addition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/math/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/EvgrCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +43,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jsx14/Projects/Evrgreen"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.math.Main" />
+    <configuration name="EvgrCommand" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.evergreen.EvgrCommand" />
       <module name="Math" />
-      <option name="PROGRAM_PARAMETERS" value="add -f k -s 10" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.math.*" />
+          <option name="PATTERN" value="com.evergreen.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
