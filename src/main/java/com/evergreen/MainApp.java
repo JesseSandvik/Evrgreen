@@ -2,7 +2,7 @@ package com.evergreen;
 
 import com.evergreen.plugin.InvalidPluginException;
 import com.evergreen.plugin.PluginContract;
-import com.evergreen.plugin.PluginFactory;
+import com.evergreen.plugin.PluginSubcommandFactory;
 import picocli.CommandLine;
 import picocli.CommandLine.*;
 
@@ -28,7 +28,7 @@ public class MainApp {
 
         try {
             String pluginExecutablePath = "somepath";
-            PluginContract plugin = PluginFactory.createPlugin(pluginExecutablePath);
+            PluginContract plugin = PluginSubcommandFactory.createPlugin(pluginExecutablePath);
 
             app.registerPlugin(plugin);
         } catch (InvalidPluginException e) {
