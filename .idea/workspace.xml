@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="524cbf13-9924-4dd6-baab-f06caed3f956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/ExecutablePlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/InvalidPluginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/EvgrCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +51,9 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="EvgrCommand" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.evergreen.EvgrCommand" />
-      <module name="Math" />
+    <configuration name="MainApp" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.evergreen.MainApp" />
+      <module name="evgr" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.evergreen.plugin.*" />
