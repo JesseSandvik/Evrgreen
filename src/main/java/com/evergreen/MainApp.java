@@ -4,12 +4,10 @@ import com.evergreen.plugin.InvalidPluginException;
 import com.evergreen.plugin.PluginContract;
 import com.evergreen.plugin.PluginSubcommandFactory;
 import picocli.CommandLine;
-import picocli.CommandLine.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Command(name = "evgr")
 public class MainApp {
     private final List<PluginContract> plugins;
     public MainApp() {
@@ -27,8 +25,9 @@ public class MainApp {
         MainApp app = new MainApp();
 
         try {
-            String pluginExecutablePath = "somepath";
-            PluginContract plugin = PluginSubcommandFactory.createPlugin(pluginExecutablePath);
+            String pluginName = "name";
+            String pluginPath = "somepath";
+            PluginContract plugin = PluginSubcommandFactory.createPlugin(pluginName, pluginPath);
 
             app.registerPlugin(plugin);
         } catch (InvalidPluginException e) {
