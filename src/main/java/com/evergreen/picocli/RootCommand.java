@@ -2,7 +2,7 @@ package com.evergreen.picocli;
 
 import picocli.CommandLine.Model.*;
 
-public class MainCommand implements Runnable {
+public class RootCommand implements Runnable {
     private CommandSpec spec;
     public void addSubcommand(String subcommandName, CommandSpec subcommandSpec) {
         spec.addSubcommand(subcommandName, subcommandSpec);

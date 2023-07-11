@@ -1,13 +1,14 @@
-package com.evergreen.subcommand;
+package com.evergreen.picocli.subcommand;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Subcommand {
     private String name;
     private String description;
-    private ArrayList<String> parameters = new ArrayList<>();
+    private List<String> parameters = new ArrayList<>();
     private Map<Character, String> options = new HashMap<>();
 
     public String getDescription() {
@@ -18,7 +19,7 @@ public class Subcommand {
         this.description = description;
     }
 
-    public ArrayList<String> getParameters() {
+    public List<String> getParameters() {
         return parameters;
     }
 

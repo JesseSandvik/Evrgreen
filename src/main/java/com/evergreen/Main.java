@@ -2,15 +2,14 @@ package com.evergreen;
 
 import com.evergreen.plugin.InvalidPluginException;
 import com.evergreen.plugin.PluginContract;
-import com.evergreen.plugin.PluginSubcommandFactory;
 import picocli.CommandLine;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainApp {
+public class Main {
     private final List<PluginContract> plugins;
-    public MainApp() {
+    public Main() {
         plugins = new ArrayList<>();
     }
     public void registerPlugin(PluginContract plugin) {
@@ -22,7 +21,7 @@ public class MainApp {
         }
     }
     public static void main(String[] args) {
-        MainApp app = new MainApp();
+        Main app = new Main();
 
         try {
             String pluginName = "name";

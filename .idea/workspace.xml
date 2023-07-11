@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="524cbf13-9924-4dd6-baab-f06caed3f956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/MainCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/SubcommandPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/SubcommandPluginFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/Plugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/BaseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/PluginExecutesHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/PluginExistsHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginSubcommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginSubcommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/RootCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginSubcommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginSubcommandFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/subcommand/Subcommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/Subcommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +61,8 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="MainApp" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.evergreen.MainApp" />
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.evergreen.Main" />
       <module name="evgr" />
       <extension name="coverage">
         <pattern>
