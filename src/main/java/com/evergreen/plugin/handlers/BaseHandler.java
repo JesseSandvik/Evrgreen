@@ -1,20 +1,16 @@
 package com.evergreen.plugin.handlers;
 
-import com.evergreen.plugin.PluginContract;
-
 public abstract class BaseHandler implements Handler {
     private Handler next;
-    public Handler setNextHandler(Handler next) {
+    public Handler setHandler(Handler next) {
         this.next = next;
         return next;
     }
-
-    public abstract boolean handle(PluginContract plugin);
-
-    protected boolean handleNext(PluginContract plugin) {
+    public abstract boolean handle(String pluginName);
+    protected boolean handleNext(String pluginName) {
         if (next == null) {
             return true;
         }
-        return next.handle(plugin);
+        return next.handle(pluginName);
     }
 }

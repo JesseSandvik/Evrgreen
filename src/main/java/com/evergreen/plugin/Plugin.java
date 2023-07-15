@@ -1,6 +1,6 @@
 package com.evergreen.plugin;
 
-public class Plugin  {
+public class Plugin {
     String pluginPath;
 
     public Plugin(String pluginPath) {
@@ -14,5 +14,4 @@ public class Plugin  {
     public void setPluginPath(String pluginPath) {
         this.pluginPath = pluginPath;
     }
-
 }

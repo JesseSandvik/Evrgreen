@@ -2,7 +2,7 @@ package com.evergreen.picocli.subcommand;
 
 import com.evergreen.plugin.PluginContract;
 
-public class SubcommandPlugin extends Subcommand implements PluginContract {
+public class SubcommandPlugin extends Subcommand {
     String pluginPath;
 
     public SubcommandPlugin(String pluginName, String pluginPath) {
