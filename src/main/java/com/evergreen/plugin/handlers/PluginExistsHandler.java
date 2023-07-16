@@ -9,7 +9,7 @@ public class PluginExistsHandler extends BaseHandler {
     }
     @Override
     public boolean handle(String pluginPath) {
-        if (plugin.pluginExists(pluginPath)) {
+        if (plugin.exists(pluginPath)) {
             return handleNext(pluginPath);
         }
         return false;

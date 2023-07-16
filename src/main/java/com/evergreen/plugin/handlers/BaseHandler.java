@@ -2,7 +2,7 @@ package com.evergreen.plugin.handlers;
 
 public abstract class BaseHandler implements Handler {
     private Handler next;
-    public Handler setHandler(Handler next) {
+    public Handler setNextHandler(Handler next) {
         this.next = next;
         return next;
     }
