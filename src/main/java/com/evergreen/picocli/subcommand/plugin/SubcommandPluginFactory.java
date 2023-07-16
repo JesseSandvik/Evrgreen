@@ -21,4 +21,10 @@ public class SubcommandPluginFactory {
             throw new InvalidPluginException("An invalid plugin has been provided: " + pluginPath);
         }
     }
+    public void executePlugins() {
+        for (SubcommandPlugin subcommandPlugin : subcommandPlugins) {
+            Plugin plugin = subcommandPlugin.getPlugin();
+            plugin.execute();
+        }
+    }
 }

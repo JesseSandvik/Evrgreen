@@ -1,17 +1,17 @@
 package com.evergreen.picocli;
 
+import com.evergreen.picocli.subcommand.Subcommand;
 import picocli.CommandLine.Model.*;
 
-public class RootCommand implements Runnable {
-    private CommandSpec spec;
-    public void addSubcommand(String subcommandName, CommandSpec subcommandSpec) {
-        spec.addSubcommand(subcommandName, subcommandSpec);
+public class RootCommand {
+    private final CommandSpec rootSpec;
+    public RootCommand(String commandName) {
+        this.rootSpec = CommandSpec.create();
+        rootSpec.name(commandName);
     }
-
-    public void addSubcommandOption(String subcommandName, String shortOption, String longOption) {}
-    @Override
-    public void run() {
-        final CommandSpec rootspec = CommandSpec.create();
-        rootspec.name("evgr");
+    public void addSubcommand(Subcommand subcommand) {
+        this.rootSpec.addSubcommand(
+                subcommand.getName(),
+                CommandSpec.wrapWithoutInspection((Runnable) () -> {}));
     }
 }
