@@ -4,11 +4,9 @@ import com.evergreen.picocli.subcommand.Subcommand;
 import picocli.CommandLine;
 import picocli.CommandLine.Model.*;
 
-import java.io.PrintWriter;
-
-public class RootCommand {
+public class RootCommandSpec {
     private final CommandSpec rootSpec;
-    public RootCommand(String commandName) {
+    public RootCommandSpec(String commandName) {
         this.rootSpec = CommandSpec.wrapWithoutInspection((Runnable) () -> {});
         this.rootSpec.name(commandName);
     }
@@ -18,10 +16,10 @@ public class RootCommand {
                 CommandSpec.wrapWithoutInspection((Runnable) () -> {
                 }));
     }
-    public CommandLine getRootCommand() {
+    public CommandLine getCommand() {
         return new CommandLine(this.rootSpec);
     }
-    public CommandSpec getRootSpec() {
+    public CommandSpec getSpec() {
         return rootSpec;
     }
 }
