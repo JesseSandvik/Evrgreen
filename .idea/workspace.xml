@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/RootCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/RootCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/SubcommandPluginFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/SubcommandPluginFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "java.suggest.annotation.dependency": "false",
     "last_opened_file_path": "C:/Users/jsx14/Projects/Evrgreen",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }

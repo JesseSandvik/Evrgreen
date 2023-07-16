@@ -5,7 +5,14 @@ import picocli.CommandLine;
 
 public class Main {
     public static void main(String[] args) {
-        int exitCode = new CommandLine(RootCommand).execute(args);
-        System.exit(exitCode);
+        RootCommand rootCommand = new RootCommand("evgr");
+        CommandLine root = rootCommand.getRootCommand();
+
+        if (args.length < 1) {
+            root.usage(System.out);
+            System.exit(0);
+        }
+
+        System.exit(new CommandLine(rootCommand.getRootSpec()).execute(args));
     }
 }
