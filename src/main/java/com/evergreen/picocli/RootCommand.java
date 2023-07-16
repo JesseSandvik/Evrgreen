@@ -46,7 +46,7 @@ public class RootCommand {
         this.rootCommand.setHelpSectionKeys(usageKeys);
     }
     private void getConfigurationDetails() throws IOException {
-        try (InputStream input = getClass().getClassLoader().getResourceAsStream("evgr.properties")) {
+        try (InputStream input = getClass().getClassLoader().getResourceAsStream("*.properties")) {
             Properties props = new Properties();
 
             props.load(input);
