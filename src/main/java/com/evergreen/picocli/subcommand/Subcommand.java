@@ -42,14 +42,4 @@ public class Subcommand {
     public void setName(String name) {
         this.name = name;
     }
-
-    @Override
-    public String toString() {
-        return "Subcommand{" +
-                "name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", parameters=" + parameters +
-                ", options=" + options +
-                '}';
-    }
 }

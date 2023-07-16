@@ -1,11 +1,17 @@
 package com.evergreen.plugin.handlers;
 
-import java.io.File;
+import com.evergreen.plugin.Plugin;
 
-public class PluginExistsHandler implements Handler {
+public class PluginExistsHandler extends BaseHandler {
+    final private Plugin plugin;
+    public PluginExistsHandler(Plugin plugin) {
+        this.plugin = plugin;
+    }
     @Override
     public boolean handle(String pluginPath) {
-        File plugin = new File(pluginPath);
-        return plugin.exists();
+        if (plugin.pluginExists(pluginPath)) {
+            return handleNext(pluginPath);
+        }
+        return false;
     }
 }

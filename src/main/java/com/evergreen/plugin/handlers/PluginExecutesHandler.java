@@ -1,11 +1,17 @@
 package com.evergreen.plugin.handlers;
 
-import java.io.File;
+import com.evergreen.plugin.Plugin;
 
-public class PluginExecutesHandler implements Handler {
+public class PluginExecutesHandler extends BaseHandler {
+    private final Plugin plugin;
+    public PluginExecutesHandler(Plugin plugin) {
+        this.plugin = plugin;
+    }
     @Override
     public boolean handle(String pluginPath) {
-        File plugin = new File(pluginPath);
-        return plugin.canExecute();
+        if (plugin.isExecutable(pluginPath)) {
+            return handleNext(pluginPath);
+        }
+        return false;
     }
 }
