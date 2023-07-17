@@ -1,6 +1,5 @@
 package com.evergreen.picocli;
 
-import com.evergreen.Main;
 import com.evergreen.picocli.subcommand.Subcommand;
 import picocli.CommandLine;
 import picocli.CommandLine.Model.*;
@@ -45,7 +44,7 @@ public class RootCommand {
         usageKeys.add(usageFooterIndex + 1, SECTION_KEY_AVAILABLE_COMMANDS_DETAILS);
         this.rootCommand.setHelpSectionKeys(usageKeys);
     }
-    private void getConfigurationDetails() throws IOException {
+    private void getConfigurationDetails() {
         try (InputStream input = getClass().getClassLoader().getResourceAsStream("*.properties")) {
             Properties props = new Properties();
 
@@ -58,7 +57,6 @@ public class RootCommand {
             ex.printStackTrace();
         }
     }
-    private void setConfigurationDetails() {}
     public CommandLine getCommand() {
         return rootCommand;
     }
