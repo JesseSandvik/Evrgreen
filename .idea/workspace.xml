@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="524cbf13-9924-4dd6-baab-f06caed3f956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileHasVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pluginA.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pluginB.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/RootCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/RootCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileExists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileHasDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileHasDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/SubcommandPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/SubcommandPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
