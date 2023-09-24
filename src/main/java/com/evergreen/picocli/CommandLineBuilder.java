@@ -1,6 +1,9 @@
 package com.evergreen.picocli;
 
 import com.evergreen.command.Command;
+import com.evergreen.command.Option;
+import com.evergreen.command.PositionalParameter;
+import picocli.CommandLine;
 import picocli.CommandLine.Model.*;
 
 public class CommandLineBuilder {
@@ -31,5 +34,46 @@ public class CommandLineBuilder {
         if (command.getUsageDescriptionFull() != null) {
             this.commandSpec.usageMessage().footer("\n" + command.getUsageDescriptionFull() + "%n");
         }
+    }
+
+    public CommandLineBuilder addPositionalParameter(PositionalParameter positionalParameter) {
+        this.commandSpec.addPositional(PositionalParamSpec
+                .builder()
+                .paramLabel(positionalParameter.label())
+                .description(positionalParameter.description())
+                .build()
+        );
+        return this;
+    }
+
+    public CommandLineBuilder addOption(Option option) {
+        OptionSpec.Builder optionSpec = OptionSpec
+                .builder(option.getNames())
+                .description(option.getDescription())
+                .type(option.getType());
+
+        if (option.getParamLabel() != null) {
+            optionSpec.paramLabel(option.getParamLabel());
+        }
+
+        this.commandSpec.addOption(optionSpec.build());
+        return this;
+    }
+
+    public CommandLineBuilder addSubcommand(CommandLine subcommandLine) {
+        this.commandSpec.addSubcommand(subcommandLine.getCommandName(), subcommandLine);
+        return this;
+    }
+
+    public CommandLine build() {
+        for (PositionalParameter positionalParameter : command.getPositionalParameters()) {
+            this.addPositionalParameter(positionalParameter);
+        }
+
+        for (Option option : command.getOptions()) {
+            this.addOption(option);
+        }
+
+        return new CommandLine(commandSpec);
     }
 }
