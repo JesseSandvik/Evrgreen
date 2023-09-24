@@ -3,6 +3,7 @@ package com.evergreen.command;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class ExternalExecutableCommand extends ExecutableCommand {
     public ExternalExecutableCommand(String name) {
@@ -21,6 +22,15 @@ public class ExternalExecutableCommand extends ExecutableCommand {
         if (executableFile.exists()) {
             List<String> args = new ArrayList<>();
             args.add(executableSubcommandFilePath);
+
+            for (Map.Entry<String, Object> parameter : this.getValuesToPositionalParameterLabels().entrySet()) {
+                args.add(parameter.getValue().toString());
+            }
+
+            for (Map.Entry<String, Object> option : this.getValuesToOptionsLongestName().entrySet()) {
+                args.add(option.getKey());
+                args.add(option.getValue().toString());
+            }
 
             final ProcessBuilder processBuilder = new ProcessBuilder();
             processBuilder.command(args);

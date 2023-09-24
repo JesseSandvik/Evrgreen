@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="524cbf13-9924-4dd6-baab-f06caed3f956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExecutableCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExternalExecutableCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExecutableCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExecutableCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExternalExecutableCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExternalExecutableCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
