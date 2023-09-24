@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="524cbf13-9924-4dd6-baab-f06caed3f956" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/contract/CommandServiceContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandServiceUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/service/CommandService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandLineBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandLineBuilder.java" afterDir="false" />
     </list>
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>

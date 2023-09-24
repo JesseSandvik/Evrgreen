@@ -10,7 +10,7 @@ public class CommandLineBuilder {
     private final Command command;
     private final CommandSpec commandSpec;
 
-    public CommandLineBuilder(Command command, CommandSpec commandSpec) {
+    public CommandLineBuilder(Command command) {
         this.command = command;
         this.commandSpec = CommandSpec.create().name(command.getName());
 
