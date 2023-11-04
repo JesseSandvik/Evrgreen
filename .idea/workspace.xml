@@ -5,38 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="524cbf13-9924-4dd6-baab-f06caed3f956" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/Command.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExecutableCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExternalExecutableCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/Option.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/PositionalParameter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/contract/CommandServiceContract.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandLineBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandServiceUtility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/RootCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/Subcommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/SubcommandPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/SubcommandPluginFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/BaseHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/Handler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileExists.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileHasDescription.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileHasVersion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/InvalidPluginException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/Plugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginContract.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/BaseHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/Handler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/PluginExecutesHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/PluginExistsHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/service/CommandService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/evgr.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pluginA.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pluginB.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
