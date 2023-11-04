@@ -5,11 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="524cbf13-9924-4dd6-baab-f06caed3f956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/contract/CommandServiceContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandServiceUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/service/CommandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandLineBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandLineBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExecutableCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/ExternalExecutableCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/Option.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/command/PositionalParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/contract/CommandServiceContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandLineBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/CommandServiceUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/RootCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/Subcommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/SubcommandPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/SubcommandPluginFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/BaseHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileExists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileHasDescription.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/picocli/subcommand/plugin/handlers/SubcommandPluginPropertiesFileHasVersion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/InvalidPluginException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/Plugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/PluginContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/BaseHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/PluginExecutesHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/plugin/handlers/PluginExistsHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evergreen/service/CommandService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/evgr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pluginA.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pluginB.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +55,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2RdEyCqOVVTdH1fJPH3D8Cw6SB2" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -43,17 +67,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "java.suggest.annotation.dependency": "false",
-    "last_opened_file_path": "C:/Users/jsryzen/Projects/Evrgreen",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;java.suggest.annotation.dependency&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jsryzen/Projects/Evrgreen&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jsryzen\Projects\Evrgreen\src\main\resources" />
