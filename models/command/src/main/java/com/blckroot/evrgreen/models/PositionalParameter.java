@@ -2,12 +2,12 @@ package com.blckroot.evrgreen.models;
 
 public class PositionalParameter implements PositionalParameterContract {
     private final String label;
-    private final String description;
+    private final String synopsis;
     private Object value;
 
-    public PositionalParameter(String label, String description) {
+    public PositionalParameter(String label, String synopsis) {
         this.label = label;
-        this.description = description;
+        this.synopsis = synopsis;
     }
 
     @Override
@@ -16,8 +16,8 @@ public class PositionalParameter implements PositionalParameterContract {
     }
 
     @Override
-    public String getDescription() {
-        return description;
+    public String getSynopsis() {
+        return synopsis;
     }
 
     @Override

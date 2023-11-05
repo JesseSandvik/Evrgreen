@@ -2,7 +2,7 @@ package com.blckroot.evrgreen.models;
 
 interface PositionalParameterContract {
     String getLabel();
-    String getDescription();
+    String getSynopsis();
     Object getValue();
     void setValue(Object value);
 }
