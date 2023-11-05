@@ -3,6 +3,7 @@ package com.blckroot.evrgreen.services;
 import java.util.Properties;
 
 public class OperatingSystemServiceUtility implements OperatingSystemServiceContract {
+    private static final LoggerService logger = new LoggerService(OperatingSystemServiceUtility.class.getName());
     private static Properties operatingSystemProperties;
 
     public OperatingSystemServiceUtility() {
@@ -10,9 +11,7 @@ public class OperatingSystemServiceUtility implements OperatingSystemServiceCont
     }
 
     @Override
-    public String getFileSeparator() {
-        return operatingSystemProperties.getProperty("file.separator");
-    }
+    public String getFileSeparator() { return operatingSystemProperties.getProperty("file.separator"); }
 
     @Override
     public String getJavaClassPath() {

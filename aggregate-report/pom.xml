@@ -24,7 +24,7 @@
                     <execution>
                         <phase>verify</phase>
                         <goals>
-                            <goal>report-aggregation</goal>
+                            <goal>report-aggregate</goal>
                         </goals>
                         <configuration>
                             <dataFileIncludes>
@@ -40,6 +40,14 @@
 
     <dependencies>
         <!-- Services -->
+        <dependency>
+            <groupId>com.evrgreen</groupId>
+            <artifactId>services-logger</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.evrgreen</groupId>
+            <artifactId>services-operating-system</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

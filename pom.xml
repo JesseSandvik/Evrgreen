@@ -21,14 +21,24 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.surefire.plugin.version>3.2.1</maven.surefire.plugin.version>
         <!-- Third-Party Dependencies -->
         <log4j.version>2.21.1</log4j.version>
         <junit.version>5.10.0</junit.version>
         <jacoco.version>0.8.10</jacoco.version>
+        <!-- Services -->
+        <service.logging.version>1.0.0</service.logging.version>
+        <service.operating.system.version>1.0.0</service.operating.system.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.plugin.version}</version>
+            </dependency>
+            <!-- Third-Party Dependencies -->
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-api</artifactId>
@@ -50,6 +60,17 @@
                 <artifactId>junit-jupiter-engine</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <!-- Services -->
+            <dependency>
+                <groupId>com.evrgreen</groupId>
+                <artifactId>services-logger</artifactId>
+                <version>${service.logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.evrgreen</groupId>
+                <artifactId>services-operating-system</artifactId>
+                <version>${service.operating.system.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
