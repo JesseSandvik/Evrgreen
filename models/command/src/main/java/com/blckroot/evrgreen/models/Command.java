@@ -27,8 +27,18 @@ public class Command implements CommandContract {
     }
 
     @Override
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    @Override
     public String getSynopsis() {
         return synopsis;
+    }
+
+    @Override
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
     }
 
     @Override
@@ -37,8 +47,18 @@ public class Command implements CommandContract {
     }
 
     @Override
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    @Override
     public List<PositionalParameter> getPositionalParameters() {
         return positionalParameters;
+    }
+
+    @Override
+    public void addPositionalParameter(PositionalParameter positionalParameter) {
+        positionalParameters.add(positionalParameter);
     }
 
     @Override
@@ -47,7 +67,17 @@ public class Command implements CommandContract {
     }
 
     @Override
+    public void addOption(Option option) {
+        options.add(option);
+    }
+
+    @Override
     public List<Command> getSubcommands() {
         return subcommands;
+    }
+
+    @Override
+    public void addSubcommand(Command subcommand) {
+        subcommands.add(subcommand);
     }
 }
