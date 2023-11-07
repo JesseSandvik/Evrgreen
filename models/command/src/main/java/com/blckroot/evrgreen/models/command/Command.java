@@ -1,7 +1,11 @@
-package com.blckroot.evrgreen.models;
+package com.blckroot.evrgreen.models.command;
+
+import com.blckroot.evrgreen.models.option.Option;
+import com.blckroot.evrgreen.models.positionalParameter.PositionalParameter;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class Command implements CommandContract {
     private final String name;

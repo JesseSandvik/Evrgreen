@@ -1,4 +1,4 @@
-package com.blckroot.evrgreen.models;
+package com.blckroot.evrgreen.models.option;
 
 interface OptionContract {
     String getLongName();

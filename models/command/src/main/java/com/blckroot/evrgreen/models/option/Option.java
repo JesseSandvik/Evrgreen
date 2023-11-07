@@ -1,4 +1,4 @@
-package com.blckroot.evrgreen.models;
+package com.blckroot.evrgreen.models.option;
 
 public class Option implements OptionContract {
     private final String longName;

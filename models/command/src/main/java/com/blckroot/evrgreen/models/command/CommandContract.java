@@ -1,6 +1,10 @@
-package com.blckroot.evrgreen.models;
+package com.blckroot.evrgreen.models.command;
+
+import com.blckroot.evrgreen.models.option.Option;
+import com.blckroot.evrgreen.models.positionalParameter.PositionalParameter;
 
 import java.util.List;
+
 
 interface CommandContract {
     String getName();
