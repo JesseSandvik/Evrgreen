@@ -1,55 +1,48 @@
-package com.blckroot.evrgreen.models.option;
+package com.blckroot.sdk.command.model;
 
-public class Option implements OptionContract {
-    private final String longName;
-    private final String shortName;
-    private final String synopsis;
+public class Option {
+    private String longName;
+    private String shortName;
+    private String synopsis;
     private String label;
     private Object value;
 
-    public Option(String longName, String synopsis) {
-        this.longName = longName;
-        this.shortName = null;
-        this.synopsis = synopsis;
-    }
-
-    public Option(String longName, String shortName, String synopsis) {
-        this.longName = longName;
-        this.shortName = shortName;
-        this.synopsis = synopsis;
-    }
-
-    @Override
     public String getLongName() {
         return longName;
     }
 
-    @Override
+    public void setLongName(String longName) {
+        this.longName = longName;
+    }
+
     public String getShortName() {
         return shortName;
     }
 
-    @Override
+    public void setShortName(String shortName) {
+        this.shortName = shortName;
+    }
+
     public String getSynopsis() {
         return synopsis;
     }
 
-    @Override
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
+    }
+
     public String getLabel() {
         return label;
     }
 
-    @Override
     public void setLabel(String label) {
         this.label = label;
     }
 
-    @Override
     public Object getValue() {
         return value;
     }
 
-    @Override
     public void setValue(Object value) {
         this.value = value;
     }

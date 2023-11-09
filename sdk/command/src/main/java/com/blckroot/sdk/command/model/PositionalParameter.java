@@ -1,31 +1,30 @@
-package com.blckroot.evrgreen.models.positionalParameter;
+package com.blckroot.sdk.command.model;
 
-public class PositionalParameter implements PositionalParameterContract {
-    private final String label;
-    private final String synopsis;
+public class PositionalParameter {
+    private String label;
+    private String synopsis;
     private Object value;
 
-    public PositionalParameter(String label, String synopsis) {
-        this.label = label;
-        this.synopsis = synopsis;
-    }
-
-    @Override
     public String getLabel() {
         return label;
     }
 
-    @Override
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
     public String getSynopsis() {
         return synopsis;
     }
 
-    @Override
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
+    }
+
     public Object getValue() {
         return value;
     }
 
-    @Override
     public void setValue(Object value) {
         this.value = value;
     }

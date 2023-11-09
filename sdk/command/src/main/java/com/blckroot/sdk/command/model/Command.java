@@ -1,87 +1,68 @@
-package com.blckroot.evrgreen.models.command;
-
-import com.blckroot.evrgreen.models.option.Option;
-import com.blckroot.evrgreen.models.positionalParameter.PositionalParameter;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.blckroot.sdk.command.model;
 
 
-public class Command implements CommandContract {
-    private final String name;
+public class Command {
+    private String name;
     private String version;
     private String synopsis;
     private String description;
-    private final List<PositionalParameter> positionalParameters = new ArrayList<>();
-    private final List<Option> options = new ArrayList<>();
-    private final List<Command> subcommands = new ArrayList<>();
+    private PositionalParameter[] positionalParameters;
+    private Option[] options;
+    private Command[] subcommands;
 
-    public Command(String name) {
-        this.name = name;
-    }
-
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getVersion() {
         return version;
     }
 
-    @Override
     public void setVersion(String version) {
         this.version = version;
     }
 
-    @Override
     public String getSynopsis() {
         return synopsis;
     }
 
-    @Override
     public void setSynopsis(String synopsis) {
         this.synopsis = synopsis;
     }
 
-    @Override
     public String getDescription() {
         return description;
     }
 
-    @Override
     public void setDescription(String description) {
         this.description = description;
     }
 
-    @Override
-    public List<PositionalParameter> getPositionalParameters() {
+    public PositionalParameter[] getPositionalParameters() {
         return positionalParameters;
     }
 
-    @Override
-    public void addPositionalParameter(PositionalParameter positionalParameter) {
-        positionalParameters.add(positionalParameter);
+    public void setPositionalParameters(PositionalParameter[] positionalParameters) {
+        this.positionalParameters = positionalParameters;
     }
 
-    @Override
-    public List<Option> getOptions() {
+    public Option[] getOptions() {
         return options;
     }
 
-    @Override
-    public void addOption(Option option) {
-        options.add(option);
+    public void setOptions(Option[] options) {
+        this.options = options;
     }
 
-    @Override
-    public List<Command> getSubcommands() {
+    public Command[] getSubcommands() {
         return subcommands;
     }
 
-    @Override
-    public void addSubcommand(Command subcommand) {
-        subcommands.add(subcommand);
+    public void setSubcommands(Command[] subcommands) {
+        this.subcommands = subcommands;
     }
 }
