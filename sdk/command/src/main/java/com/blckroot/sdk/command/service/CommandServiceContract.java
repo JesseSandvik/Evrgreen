@@ -1,3 +1,5 @@
 package com.blckroot.sdk.command.service;
 
-interface CommandServiceContract {}
+interface CommandServiceContract {
+    Integer parse(String[] arguments);
+}
