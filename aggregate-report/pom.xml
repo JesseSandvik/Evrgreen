@@ -5,14 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.evrgreen</groupId>
-        <artifactId>evrg</artifactId>
+        <groupId>com.blckroot</groupId>
+        <artifactId>blckroot</artifactId>
         <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>jacoco-aggregate-report</artifactId>
-    <version>1.0.0</version>
 
     <build>
         <plugins>
@@ -41,12 +40,14 @@
     <dependencies>
         <!-- Services -->
         <dependency>
-            <groupId>com.evrgreen</groupId>
-            <artifactId>services-logger</artifactId>
+            <groupId>com.blckroot</groupId>
+            <artifactId>blckroot-sdk-logger</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
-            <groupId>com.evrgreen</groupId>
-            <artifactId>services-operating-system</artifactId>
+            <groupId>com.blckroot</groupId>
+            <artifactId>blckroot-sdk-operating-system</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 

@@ -4,17 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.evrgreen</groupId>
-    <artifactId>evrg</artifactId>
+    <groupId>com.blckroot</groupId>
+    <artifactId>blckroot</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <modules>
-        <!-- Services -->
-        <module>services/logger</module>
-        <module>services/operating-system</module>
         <!-- Jacoco Report Aggregation -->
         <module>aggregate-report</module>
+        <!-- Services -->
+        <module>sdk/logger</module>
+        <module>sdk/operating-system</module>
     </modules>
 
     <properties>
@@ -26,9 +26,6 @@
         <log4j.version>2.21.1</log4j.version>
         <junit.version>5.10.0</junit.version>
         <jacoco.version>0.8.10</jacoco.version>
-        <!-- Services -->
-        <service.logging.version>1.0.0</service.logging.version>
-        <service.operating.system.version>1.0.0</service.operating.system.version>
     </properties>
 
     <dependencyManagement>
@@ -60,17 +57,6 @@
                 <artifactId>junit-jupiter-engine</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
-            </dependency>
-            <!-- Services -->
-            <dependency>
-                <groupId>com.evrgreen</groupId>
-                <artifactId>services-logger</artifactId>
-                <version>${service.logging.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.evrgreen</groupId>
-                <artifactId>services-operating-system</artifactId>
-                <version>${service.operating.system.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
