@@ -11,7 +11,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>jacoco-aggregate-report</artifactId>
+    <artifactId>blckroot_aggregated-test-report</artifactId>
 
     <build>
         <plugins>
@@ -38,16 +38,20 @@
     </build>
 
     <dependencies>
-        <!-- Services -->
+        <dependency>
+            <groupId>com.blckroot</groupId>
+            <artifactId>blckroot-sdk-command</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.blckroot</groupId>
             <artifactId>blckroot-sdk-logger</artifactId>
-            <version>1.0.0</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.blckroot</groupId>
             <artifactId>blckroot-sdk-operating-system</artifactId>
-            <version>1.0.0</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

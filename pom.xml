@@ -11,7 +11,7 @@
 
     <modules>
         <!-- Jacoco Report Aggregation -->
-        <module>aggregate-report</module>
+        <module>_aggregated-test-report</module>
         <module>sdk</module>
     </modules>
 
