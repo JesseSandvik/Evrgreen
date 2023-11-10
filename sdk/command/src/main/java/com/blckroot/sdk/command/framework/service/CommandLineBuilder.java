@@ -1,4 +1,4 @@
-package com.blckroot.sdk.command.service;
+package com.blckroot.sdk.command.framework.service;
 
 import com.blckroot.sdk.command.executable.CallableCommand;
 import com.blckroot.sdk.command.model.Option;

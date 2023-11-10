@@ -6,9 +6,9 @@
 
     <parent>
         <groupId>com.blckroot</groupId>
-        <artifactId>blckroot</artifactId>
+        <artifactId>blckroot-sdk</artifactId>
         <version>1.0.0</version>
-        <relativePath>../../pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>blckroot-sdk-command</artifactId>

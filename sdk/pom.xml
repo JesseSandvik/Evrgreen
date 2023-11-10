@@ -6,22 +6,19 @@
 
     <parent>
         <groupId>com.blckroot</groupId>
-        <artifactId>blckroot-sdk</artifactId>
+        <artifactId>blckroot</artifactId>
         <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>blckroot-sdk-operating-system</artifactId>
+    <artifactId>blckroot-sdk</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>command</module>
+        <module>logger</module>
+        <module>operating-system</module>
+    </modules>
 
 </project>

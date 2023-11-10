@@ -12,9 +12,7 @@
     <modules>
         <!-- Jacoco Report Aggregation -->
         <module>aggregate-report</module>
-        <!-- Services -->
-        <module>sdk/logger</module>
-        <module>sdk/operating-system</module>
+        <module>sdk</module>
     </modules>
 
     <properties>
