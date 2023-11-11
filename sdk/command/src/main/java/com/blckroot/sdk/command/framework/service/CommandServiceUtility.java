@@ -1,6 +1,5 @@
 package com.blckroot.sdk.command.framework.service;
 
-import com.blckroot.sdk.command.executable.CallableCommand;
 import picocli.CommandLine;
 
 class CommandServiceUtility implements CommandServiceContract {

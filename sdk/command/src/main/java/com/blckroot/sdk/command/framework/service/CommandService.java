@@ -1,7 +1,5 @@
 package com.blckroot.sdk.command.framework.service;
 
-import com.blckroot.sdk.command.executable.CallableCommand;
-
 public class CommandService implements CommandServiceContract {
     private final CommandServiceUtility commandServiceUtility;
 

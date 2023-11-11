@@ -2,7 +2,7 @@ package com.blckroot.sdk.command.model;
 
 
 public class Command {
-    private String name;
+    private final String name;
     private String version;
     private String synopsis;
     private String description;
@@ -10,12 +10,12 @@ public class Command {
     private Option[] options;
     private Command[] subcommands;
 
-    public String getName() {
-        return name;
+    public Command(String name) {
+        this.name = name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     public String getVersion() {

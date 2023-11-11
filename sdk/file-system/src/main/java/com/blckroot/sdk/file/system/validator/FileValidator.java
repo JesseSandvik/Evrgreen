@@ -8,7 +8,17 @@ public class FileValidator implements FileValidatorContract {
     }
 
     @Override
+    public Boolean directoryExists(String directory) {
+        return fileValidatorUtility.directoryExists(directory);
+    }
+
+    @Override
     public Boolean fileCanExecute(String file) {
         return fileValidatorUtility.fileCanExecute(file);
+    }
+
+    @Override
+    public Boolean fileExists(String file) {
+        return fileValidatorUtility.fileExists(file);
     }
 }

@@ -1,6 +1,5 @@
 package com.blckroot.sdk.command.framework.service;
 
-import com.blckroot.sdk.command.executable.CallableCommand;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
