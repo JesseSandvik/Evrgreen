@@ -6,6 +6,7 @@ public class Command {
     private String version;
     private String synopsis;
     private String description;
+    private Boolean executesWithoutArguments = false;
     private PositionalParameter[] positionalParameters;
     private Option[] options;
     private Command[] subcommands;
@@ -40,6 +41,14 @@ public class Command {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public boolean isExecutesWithoutArguments() {
+        return executesWithoutArguments;
+    }
+
+    public void setExecutesWithoutArguments(boolean executesWithoutArguments) {
+        this.executesWithoutArguments = executesWithoutArguments;
     }
 
     public PositionalParameter[] getPositionalParameters() {
