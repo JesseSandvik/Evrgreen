@@ -20,6 +20,7 @@
         <module>file-system</module>
         <module>logger</module>
         <module>operating-system</module>
+        <module>printer</module>
     </modules>
 
 </project>
