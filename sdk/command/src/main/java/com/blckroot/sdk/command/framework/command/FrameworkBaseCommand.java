@@ -22,8 +22,8 @@ public interface FrameworkBaseCommand {
     void addPositionalParameter(PositionalParameter positionalParameter);
     List<Option> getOptions();
     void addOption(Option option);
-    List<FrameworkCommand> getFrameworkSubcommands();
-    void addFrameworkSubcommand(FrameworkCommand subcommand);
+    List<FrameworkBaseCommand> getFrameworkSubcommands();
+    void addFrameworkSubcommand(FrameworkBaseCommand subcommand);
     List<String> getArguments();
     void addArgument(String argument);
     Integer call() throws Exception;

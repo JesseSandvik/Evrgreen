@@ -1,7 +1,6 @@
 package com.blckroot.sdk.command.framework.command.decorator;
 
 import com.blckroot.sdk.command.framework.command.FrameworkBaseCommand;
-import com.blckroot.sdk.command.framework.command.FrameworkCommand;
 import com.blckroot.sdk.command.model.Option;
 import com.blckroot.sdk.command.model.PositionalParameter;
 
@@ -91,12 +90,12 @@ public abstract class FrameworkCommandDecorator implements FrameworkBaseCommand 
     }
 
     @Override
-    public List<FrameworkCommand> getFrameworkSubcommands() {
+    public List<FrameworkBaseCommand> getFrameworkSubcommands() {
         return this.frameworkCommand.getFrameworkSubcommands();
     }
 
     @Override
-    public void addFrameworkSubcommand(FrameworkCommand subcommand) {
+    public void addFrameworkSubcommand(FrameworkBaseCommand subcommand) {
         this.frameworkCommand.getFrameworkSubcommands().add(subcommand);
     }
 

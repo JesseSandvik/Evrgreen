@@ -9,11 +9,11 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.Callable;
 
-public abstract class FrameworkCommand extends Command implements FrameworkBaseCommand, Callable<Integer>  {
+public class FrameworkCommand extends Command implements FrameworkBaseCommand, Callable<Integer>  {
     private Properties properties;
     private final List<PositionalParameter> positionalParameters = new ArrayList<>();
     private final List<Option> options = new ArrayList<>();
-    private final List<FrameworkCommand> frameworkSubcommands = new ArrayList<>();
+    private final List<FrameworkBaseCommand> frameworkSubcommands = new ArrayList<>();
     private final List<String> arguments = new ArrayList<>();
 
     public FrameworkCommand(String name) {
@@ -47,12 +47,12 @@ public abstract class FrameworkCommand extends Command implements FrameworkBaseC
     }
 
     @Override
-    public List<FrameworkCommand> getFrameworkSubcommands() {
+    public List<FrameworkBaseCommand> getFrameworkSubcommands() {
         return frameworkSubcommands;
     }
 
     @Override
-    public void addFrameworkSubcommand(FrameworkCommand subcommand) {
+    public void addFrameworkSubcommand(FrameworkBaseCommand subcommand) {
         frameworkSubcommands.add(subcommand);
     }
 
@@ -67,5 +67,7 @@ public abstract class FrameworkCommand extends Command implements FrameworkBaseC
     }
 
     @Override
-    public abstract Integer call() throws Exception;
+    public Integer call() throws Exception {
+        return null;
+    }
 }
