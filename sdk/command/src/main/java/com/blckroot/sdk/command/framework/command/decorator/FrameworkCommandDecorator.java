@@ -1,9 +1,12 @@
-package com.blckroot.sdk.command.callable;
+package com.blckroot.sdk.command.framework.command.decorator;
 
+import com.blckroot.sdk.command.framework.command.FrameworkBaseCommand;
+import com.blckroot.sdk.command.framework.command.FrameworkCommand;
 import com.blckroot.sdk.command.model.Option;
 import com.blckroot.sdk.command.model.PositionalParameter;
 
 import java.util.List;
+import java.util.Properties;
 
 public abstract class FrameworkCommandDecorator implements FrameworkBaseCommand {
     protected final FrameworkBaseCommand frameworkCommand;
@@ -58,23 +61,33 @@ public abstract class FrameworkCommandDecorator implements FrameworkBaseCommand 
     }
 
     @Override
-    public PositionalParameter[] getPositionalParameters() {
+    public Properties getProperties() {
+        return this.frameworkCommand.getProperties();
+    }
+
+    @Override
+    public void setProperties(Properties properties) {
+        this.frameworkCommand.setProperties(properties);
+    }
+
+    @Override
+    public List<PositionalParameter> getPositionalParameters() {
         return this.frameworkCommand.getPositionalParameters();
     }
 
     @Override
-    public void setPositionalParameters(PositionalParameter[] positionalParameters) {
-        this.frameworkCommand.setPositionalParameters(positionalParameters);
+    public void addPositionalParameter(PositionalParameter positionalParameter) {
+        this.frameworkCommand.addPositionalParameter(positionalParameter);
     }
 
     @Override
-    public Option[] getOptions() {
+    public List<Option> getOptions() {
         return this.frameworkCommand.getOptions();
     }
 
     @Override
-    public void setOptions(Option[] options) {
-        this.frameworkCommand.setOptions(options);
+    public void addOption(Option option) {
+        this.frameworkCommand.addOption(option);
     }
 
     @Override

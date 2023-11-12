@@ -7,9 +7,6 @@ public class Command {
     private String synopsis;
     private String description;
     private Boolean executesWithoutArguments = false;
-    private PositionalParameter[] positionalParameters;
-    private Option[] options;
-    private Command[] subcommands;
 
     public Command(String name) {
         this.name = name;
@@ -49,29 +46,5 @@ public class Command {
 
     public void setExecutesWithoutArguments(boolean executesWithoutArguments) {
         this.executesWithoutArguments = executesWithoutArguments;
-    }
-
-    public PositionalParameter[] getPositionalParameters() {
-        return positionalParameters;
-    }
-
-    public void setPositionalParameters(PositionalParameter[] positionalParameters) {
-        this.positionalParameters = positionalParameters;
-    }
-
-    public Option[] getOptions() {
-        return options;
-    }
-
-    public void setOptions(Option[] options) {
-        this.options = options;
-    }
-
-    public Command[] getSubcommands() {
-        return subcommands;
-    }
-
-    public void setSubcommands(Command[] subcommands) {
-        this.subcommands = subcommands;
     }
 }
