@@ -16,6 +16,7 @@ public class SetAttributesFromPropertiesFile extends FrameworkCommandDecorator {
     public SetAttributesFromPropertiesFile(FrameworkBaseCommand frameworkCommand, String propertiesFileDirectory) {
         super(frameworkCommand);
         this.propertiesFileDirectory = propertiesFileDirectory;
+        setAttributes(super.frameworkCommand);
     }
 
     private String getFormattedKey(Integer keyIndex, String key) {
@@ -172,8 +173,6 @@ public class SetAttributesFromPropertiesFile extends FrameworkCommandDecorator {
 
     @Override
     public Integer call() throws Exception {
-        setAttributes(super.frameworkCommand);
-        System.out.println("[ SUCCESSFULLY SET PROPERTIES AT RUNTIME ]");
         return super.call();
     }
 }

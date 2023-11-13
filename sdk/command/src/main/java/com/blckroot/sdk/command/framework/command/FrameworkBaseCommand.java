@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Properties;
 
 public interface FrameworkBaseCommand {
+    Properties getProperties();
+    void setProperties(Properties properties);
     String getName();
     String getVersion();
     void setVersion(String version);
@@ -16,8 +18,6 @@ public interface FrameworkBaseCommand {
     void setDescription(String description);
     boolean isExecutesWithoutArguments();
     void setExecutesWithoutArguments(boolean executesWithoutArguments);
-    Properties getProperties();
-    void setProperties(Properties properties);
     List<PositionalParameter> getPositionalParameters();
     void addPositionalParameter(PositionalParameter positionalParameter);
     List<Option> getOptions();

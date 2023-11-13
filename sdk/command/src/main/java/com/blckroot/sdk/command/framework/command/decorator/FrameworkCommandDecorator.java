@@ -15,6 +15,16 @@ public abstract class FrameworkCommandDecorator implements FrameworkBaseCommand 
     }
 
     @Override
+    public Properties getProperties() {
+        return this.frameworkCommand.getProperties();
+    }
+
+    @Override
+    public void setProperties(Properties properties) {
+        this.frameworkCommand.setProperties(properties);
+    }
+
+    @Override
     public String getName() {
         return this.frameworkCommand.getName();
     }
@@ -57,16 +67,6 @@ public abstract class FrameworkCommandDecorator implements FrameworkBaseCommand 
     @Override
     public void setExecutesWithoutArguments(boolean executesWithoutArguments) {
         this.frameworkCommand.setExecutesWithoutArguments(executesWithoutArguments);
-    }
-
-    @Override
-    public Properties getProperties() {
-        return this.frameworkCommand.getProperties();
-    }
-
-    @Override
-    public void setProperties(Properties properties) {
-        this.frameworkCommand.setProperties(properties);
     }
 
     @Override

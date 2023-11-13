@@ -21,6 +21,11 @@
         </dependency>
         <dependency>
             <groupId>com.blckroot</groupId>
+            <artifactId>blckroot-sdk-logger</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.blckroot</groupId>
             <artifactId>blckroot-sdk-operating-system</artifactId>
             <version>${project.version}</version>
         </dependency>
