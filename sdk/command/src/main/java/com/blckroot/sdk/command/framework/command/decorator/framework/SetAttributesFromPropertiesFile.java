@@ -1,4 +1,4 @@
-package com.blckroot.sdk.command.framework.command.decorator.properties;
+package com.blckroot.sdk.command.framework.command.decorator.framework;
 
 import com.blckroot.sdk.command.framework.command.FrameworkBaseCommand;
 import com.blckroot.sdk.command.framework.command.FrameworkCommand;
@@ -10,10 +10,10 @@ import com.blckroot.sdk.file.system.validator.FileValidator;
 
 import java.util.Properties;
 
-public class SetAttributesFromProperties extends FrameworkCommandDecorator {
+public class SetAttributesFromPropertiesFile extends FrameworkCommandDecorator {
     private final String propertiesFileDirectory;
 
-    public SetAttributesFromProperties(FrameworkBaseCommand frameworkCommand, String propertiesFileDirectory) {
+    public SetAttributesFromPropertiesFile(FrameworkBaseCommand frameworkCommand, String propertiesFileDirectory) {
         super(frameworkCommand);
         this.propertiesFileDirectory = propertiesFileDirectory;
     }
@@ -99,7 +99,7 @@ public class SetAttributesFromProperties extends FrameworkCommandDecorator {
     private void setSubcommands(FrameworkBaseCommand frameworkBaseCommand, String[] subcommandNames) {
         for (String subcommandName : subcommandNames) {
             FrameworkBaseCommand subcommand =
-                    new SetAttributesFromProperties(new FrameworkCommand(subcommandName), propertiesFileDirectory);
+                    new SetAttributesFromPropertiesFile(new FrameworkCommand(subcommandName), propertiesFileDirectory);
             setAttributes(subcommand);
             frameworkBaseCommand.addFrameworkSubcommand(subcommand);
         }

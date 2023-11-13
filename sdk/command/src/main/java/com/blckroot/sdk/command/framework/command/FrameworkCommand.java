@@ -68,6 +68,6 @@ public class FrameworkCommand extends Command implements FrameworkBaseCommand, C
 
     @Override
     public Integer call() throws Exception {
-        return null;
+        return 0;
     }
 }

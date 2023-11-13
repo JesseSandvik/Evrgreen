@@ -1,4 +1,4 @@
-package com.blckroot.sdk.command.framework.command.decorator.properties.options;
+package com.blckroot.sdk.command.framework.command.decorator.options;
 
 import com.blckroot.sdk.command.framework.command.FrameworkBaseCommand;
 import com.blckroot.sdk.command.framework.command.decorator.FrameworkCommandDecorator;
@@ -15,11 +15,11 @@ public class AddURIFromProperties extends FrameworkCommandDecorator {
         final String URI_PROPERTY_KEY="uri";
         Option option = new Option();
         option.setLongName("--uri-from-properties");
-        option.setLabel("<endpoint>");
-        option.setValue(this.frameworkCommand.getProperties().getProperty(URI_PROPERTY_KEY));
-        super.frameworkCommand.addOption(option);
+        option.setLabel("<uri>");
+        option.setValue(super.getProperties().getProperty(URI_PROPERTY_KEY));
+        super.addOption(option);
 
-        System.out.println("[ SUCCESSFULLY ATTACHED HTTP ENDPOINT ]");
+        System.out.println("[ SUCCESSFULLY ATTACHED HTTP URI ]");
         return super.call();
     }
 }
