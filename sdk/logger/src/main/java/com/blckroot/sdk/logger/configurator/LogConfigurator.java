@@ -5,57 +5,96 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.config.builder.api.*;
 import org.apache.logging.log4j.core.config.builder.impl.BuiltConfiguration;
 
+import java.io.IOException;
+
 public class LogConfigurator {
+    private ConfigurationBuilder<BuiltConfiguration> builder;
 
-    public void initializeLogger() {
-        ConfigurationBuilder<BuiltConfiguration> configurationBuilder =
-                ConfigurationBuilderFactory.newConfigurationBuilder();
-
-        AppenderComponentBuilder console = configurationBuilder.newAppender("stdout", "Console");
-        configurationBuilder.add(console);
-
-        LayoutComponentBuilder standard = configurationBuilder.newLayout("PatternLayout");
+    private LayoutComponentBuilder getStandardPatternLayout(ConfigurationBuilder<BuiltConfiguration> builder) {
+        LayoutComponentBuilder standard = builder.newLayout("PatternLayout");
         standard.addAttribute("pattern", "%d [%t] %-5level: %msg%n%throwable");
+        return standard;
+    }
 
-//        compact="true" eventEol="true" properties="true" stacktraceAsString="true" includeTimeMillis="true"
-        LayoutComponentBuilder jsonLayout = configurationBuilder.newLayout("JsonLayout");
-        jsonLayout.addAttribute("compact", "true");
-        jsonLayout.addAttribute("eventEol", "true");
-        jsonLayout.addAttribute("properties", "true");
-        jsonLayout.addAttribute("stacktraceAsString", "true");
-        jsonLayout.addAttribute("includeTimeMillis", "true");
+//    private LayoutComponentBuilder getJSONPatternLayout(ConfigurationBuilder<BuiltConfiguration> builder) {}
 
-//        AppenderComponentBuilder file = configurationBuilder.newAppender("log", "File");
-//        file.add(standard);
-//        file.addAttribute("fileName", "command/src/test/resources/test.log");
-//        configurationBuilder.add(file);
+    private ComponentBuilder<?> getTriggeringPolicies(ConfigurationBuilder<BuiltConfiguration> builder) {
+        ComponentBuilder<?> triggeringPolicies = builder.newComponent("Policies");
+        triggeringPolicies
+                .addComponent(builder.newComponent("CronTriggeringPolicy").addAttribute("schedule", "0 0 0 * * ?"))
+                .addComponent(builder.newComponent("SizeBasedTriggeringPolicy")
+                        .addAttribute("size", "100M"));
+        return triggeringPolicies;
+    }
 
-        AppenderComponentBuilder rollingFile = configurationBuilder.newAppender("rolling", "RollingFile");
-        rollingFile.add(jsonLayout);
-        rollingFile.addAttribute("fileName", "command/src/test/resources/rolling-test.log");
+    private AppenderComponentBuilder getConsoleAppender(ConfigurationBuilder<BuiltConfiguration> builder) {
+        AppenderComponentBuilder console = builder.newAppender("console", "Console");
+        console.add(getStandardPatternLayout(builder));
+
+        console.addAttribute("target", "SYSTEM_OUT");
+        return console;
+    }
+
+    private AppenderComponentBuilder getFileAppender(ConfigurationBuilder<BuiltConfiguration> builder) {
+        AppenderComponentBuilder file = builder.newAppender("file", "File");
+        file.add(getStandardPatternLayout(builder));
+
+        file.addAttribute("fileName", "command/src/test/resources/test.log");
+        return file;
+    }
+
+    private AppenderComponentBuilder getRollingFileAppender(ConfigurationBuilder<BuiltConfiguration> builder) {
+        AppenderComponentBuilder rollingFile = builder.newAppender("rolling", "RollingFile");
+        rollingFile.addAttribute("fileName", "logger/src/test/resources/rolling-test.log");
         rollingFile.addAttribute("filePattern", "rolling-%d{MM-dd-yy}.log.gz");
 
-        ComponentBuilder<?> triggeringPolicies = configurationBuilder.newComponent("Policies")
-                .addComponent(configurationBuilder.newComponent("CronTriggeringPolicy")
-                        .addAttribute("schedule", "0 0 0 * * ?"))
-                .addComponent(configurationBuilder.newComponent("SizeBasedTriggeringPolicy")
-                        .addAttribute("size", "100M"));
+        rollingFile.add(getStandardPatternLayout(builder));
+        rollingFile.addComponent(getTriggeringPolicies(builder));
+        return rollingFile;
+    }
 
-        rollingFile.addComponent(triggeringPolicies);
-        configurationBuilder.add(rollingFile);
-
-        RootLoggerComponentBuilder rootLogger = configurationBuilder.newRootLogger(Level.ERROR);
-        rootLogger.add(configurationBuilder.newAppenderRef("rolling"));
-//        rootLogger.add(configurationBuilder.newAppenderRef("stdout"));
+    public void initializeLogger() throws IOException {
+        builder = ConfigurationBuilderFactory.newConfigurationBuilder();
+        builder.add(getConsoleAppender(builder));
+        builder.add(getFileAppender(builder));
+        builder.add(getRollingFileAppender(builder));
+//
+////        compact="true" eventEol="true" properties="true" stacktraceAsString="true" includeTimeMillis="true"
+//        LayoutComponentBuilder jsonLayout = configurationBuilder.newLayout("JsonLayout");
+////        jsonLayout.addAttribute("compact", "true");
+////        jsonLayout.addAttribute("eventEol", "true");
+////        jsonLayout.addAttribute("properties", "true");
+////        jsonLayout.addAttribute("stacktraceAsString", "true");
+////        jsonLayout.addAttribute("includeTimeMillis", "true");
+        RootLoggerComponentBuilder rootLogger = builder.newRootLogger(Level.ERROR);
+        rootLogger.add(builder.newAppenderRef("console"));
         rootLogger.addAttribute("additivity", "true");
-        configurationBuilder.add(rootLogger);
-        org.apache.logging.log4j.core.config.Configurator.initialize(configurationBuilder.build());
+        builder.add(rootLogger);
+        System.out.println("\n");
+        builder.writeXmlConfiguration(System.out);
+        System.out.println("\n");
+        org.apache.logging.log4j.core.config.Configurator.initialize(builder.build());
     }
 
 //    Set configuration file path dynamically
 //    public void initializeLogger(String configurationFilePath) {
 //        org.apache.logging.log4j.core.config.Configurator.initialize(null, configurationFilePath);
-//    }
+
+    public void enableConsoleLogging(Boolean enable) {
+        if (enable) {
+            builder.add(getConsoleAppender(builder));
+        }
+    }
+    public void enableFileSystemLogging(Boolean enable) {
+        if (enable) {
+            builder.add(getFileAppender(builder));
+        }
+    }
+    public void enableRollingFileSystemLogging(Boolean enable) {
+        if (enable) {
+            builder.add(getRollingFileAppender(builder));
+        }
+    }
 
     public void setLevel(System.Logger.Level level) {
         org.apache.logging.log4j.core.config.Configurator.setLevel(LogManager.getRootLogger(), Level.valueOf(level.getName()));

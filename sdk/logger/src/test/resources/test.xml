@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Configuration>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d [%t] %-5level: %msg%n%throwable"/>
+        </Console>
+        <File name="file" fileName="command/src/test/resources/test.log">
+            <PatternLayout pattern="%d [%t] %-5level: %msg%n%throwable"/>
+        </File>
+        <RollingFile name="rolling" fileName="logger/src/test/resources/rolling-test.log" filePattern="rolling-%d{MM-dd-yy}.log.gz">
+            <PatternLayout pattern="%d [%t] %-5level: %msg%n%throwable"/>
+            <Policies>
+                <CronTriggeringPolicy schedule="0 0 0 * * ?"/>
+                <SizeBasedTriggeringPolicy size="100M"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="ERROR" additivity="true">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>
