@@ -1,5 +1,6 @@
 package com.blckroot.sdk.logger.configurator;
 
 interface ConfiguratorContract {
-    void initialize(String configurationFilePath);
+    void initializeLogger();
+    void setLevel(System.Logger.Level level);
 }

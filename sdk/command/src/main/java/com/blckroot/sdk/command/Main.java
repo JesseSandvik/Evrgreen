@@ -11,11 +11,12 @@ import static java.lang.System.Logger;
 import static java.lang.System.Logger.Level.*;
 
 public class Main {
-    private static final Logger LOGGER = System.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
         Configurator configurator = new Configurator();
-        configurator.setLevel(DEBUG);
+        configurator.initializeLogger();
+//        configurator.setLevel(TRACE);
+        Logger LOGGER = System.getLogger(Main.class.getName());
         LOGGER.log(DEBUG, "debug test");
         LOGGER.log(ERROR, "error test");
         LOGGER.log(WARNING, "warn test");
