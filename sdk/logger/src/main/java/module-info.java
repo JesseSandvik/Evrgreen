@@ -1,4 +1,6 @@
 module com.blckroot.sdk.logger {
+    requires jackson.core;
+    requires jackson.databind;
     requires org.apache.logging.log4j;
     requires org.apache.logging.log4j.core;
     provides System.LoggerFinder

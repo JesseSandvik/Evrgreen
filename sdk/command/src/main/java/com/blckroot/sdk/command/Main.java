@@ -5,7 +5,7 @@ import com.blckroot.sdk.command.framework.command.decorator.framework.ExecutePlu
 import com.blckroot.sdk.command.framework.command.decorator.framework.SetAttributesFromPropertiesFile;
 import com.blckroot.sdk.command.framework.executor.CommandExecutor;
 import com.blckroot.sdk.command.model.PositionalParameter;
-import com.blckroot.sdk.logger.configurator.Configurator;
+import com.blckroot.sdk.logger.configurator.LogConfigurator;
 
 import static java.lang.System.Logger;
 import static java.lang.System.Logger.Level.*;
@@ -13,9 +13,9 @@ import static java.lang.System.Logger.Level.*;
 public class Main {
 
     public static void main(String[] args) {
-        Configurator configurator = new Configurator();
-        configurator.initializeLogger();
-//        configurator.setLevel(TRACE);
+        LogConfigurator logConfigurator = new LogConfigurator();
+        logConfigurator.initializeLogger();
+        logConfigurator.setLevel(TRACE);
         Logger LOGGER = System.getLogger(Main.class.getName());
         LOGGER.log(DEBUG, "debug test");
         LOGGER.log(ERROR, "error test");

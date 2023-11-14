@@ -1,0 +1,348 @@
+[]]]debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479
+Send delete notification of object org.apache.logging.log4j2:type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479
+Send delete notification of object org.apache.logging.log4j2:type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479
+Send delete notification of object org.apache.logging.log4j2:type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=34a245ab
+name = org.apache.logging.log4j2:type=34a245ab
+Send delete notification of object org.apache.logging.log4j2:type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab
+name = org.apache.logging.log4j2:type=34a245ab,component=StatusLogger
+name = org.apache.logging.log4j2:type=34a245ab,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=StatusLogger
+name = org.apache.logging.log4j2:type=34a245ab,component=ContextSelector
+name = org.apache.logging.log4j2:type=34a245ab,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=ContextSelector
+name = org.apache.logging.log4j2:type=34a245ab,component=Loggers,name=
+name = org.apache.logging.log4j2:type=34a245ab,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=Loggers,name=
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=rolling
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=34a245ab
+name = org.apache.logging.log4j2:type=34a245ab
+Send delete notification of object org.apache.logging.log4j2:type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab
+name = org.apache.logging.log4j2:type=34a245ab,component=StatusLogger
+name = org.apache.logging.log4j2:type=34a245ab,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=StatusLogger
+name = org.apache.logging.log4j2:type=34a245ab,component=ContextSelector
+name = org.apache.logging.log4j2:type=34a245ab,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=ContextSelector
+name = org.apache.logging.log4j2:type=34a245ab,component=Loggers,name=
+name = org.apache.logging.log4j2:type=34a245ab,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=Loggers,name=
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=rolling
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=34a245ab
+name = org.apache.logging.log4j2:type=34a245ab
+Send delete notification of object org.apache.logging.log4j2:type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab
+name = org.apache.logging.log4j2:type=34a245ab,component=StatusLogger
+name = org.apache.logging.log4j2:type=34a245ab,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=StatusLogger
+name = org.apache.logging.log4j2:type=34a245ab,component=ContextSelector
+name = org.apache.logging.log4j2:type=34a245ab,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=ContextSelector
+name = org.apache.logging.log4j2:type=34a245ab,component=Loggers,name=
+name = org.apache.logging.log4j2:type=34a245ab,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=Loggers,name=
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=34a245ab
+JMX.mbean.unregistered org.apache.logging.log4j2:type=34a245ab,component=Appenders,name=rolling
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=7b23ec81
+name = org.apache.logging.log4j2:type=7b23ec81
+Send delete notification of object org.apache.logging.log4j2:type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81
+name = org.apache.logging.log4j2:type=7b23ec81,component=StatusLogger
+name = org.apache.logging.log4j2:type=7b23ec81,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=StatusLogger
+name = org.apache.logging.log4j2:type=7b23ec81,component=ContextSelector
+name = org.apache.logging.log4j2:type=7b23ec81,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=ContextSelector
+name = org.apache.logging.log4j2:type=7b23ec81,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7b23ec81,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=rolling
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479
+Send delete notification of object org.apache.logging.log4j2:type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=4783da3f
+name = org.apache.logging.log4j2:type=4783da3f
+Send delete notification of object org.apache.logging.log4j2:type=4783da3f
+JMX.mbean.unregistered org.apache.logging.log4j2:type=4783da3f
+name = org.apache.logging.log4j2:type=4783da3f,component=StatusLogger
+name = org.apache.logging.log4j2:type=4783da3f,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=4783da3f
+JMX.mbean.unregistered org.apache.logging.log4j2:type=4783da3f,component=StatusLogger
+name = org.apache.logging.log4j2:type=4783da3f,component=ContextSelector
+name = org.apache.logging.log4j2:type=4783da3f,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=4783da3f
+JMX.mbean.unregistered org.apache.logging.log4j2:type=4783da3f,component=ContextSelector
+name = org.apache.logging.log4j2:type=4783da3f,component=Loggers,name=
+name = org.apache.logging.log4j2:type=4783da3f,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=4783da3f
+JMX.mbean.unregistered org.apache.logging.log4j2:type=4783da3f,component=Loggers,name=
+name = org.apache.logging.log4j2:type=4783da3f,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=4783da3f,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=4783da3f
+JMX.mbean.unregistered org.apache.logging.log4j2:type=4783da3f,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=4783da3f,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=4783da3f,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=4783da3f
+JMX.mbean.unregistered org.apache.logging.log4j2:type=4783da3f,component=Appenders,name=stdout
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=7b23ec81
+name = org.apache.logging.log4j2:type=7b23ec81
+Send delete notification of object org.apache.logging.log4j2:type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81
+name = org.apache.logging.log4j2:type=7b23ec81,component=StatusLogger
+name = org.apache.logging.log4j2:type=7b23ec81,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=StatusLogger
+name = org.apache.logging.log4j2:type=7b23ec81,component=ContextSelector
+name = org.apache.logging.log4j2:type=7b23ec81,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=ContextSelector
+name = org.apache.logging.log4j2:type=7b23ec81,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7b23ec81,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=7b23ec81
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7b23ec81,component=Appenders,name=rolling
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479
+Send delete notification of object org.apache.logging.log4j2:type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+debug test
+error test
+warn test
+info test
+trace test
+name = org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479
+Send delete notification of object org.apache.logging.log4j2:type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+Send delete notification of object org.apache.logging.log4j2:component=StatusLogger,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=StatusLogger
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+Send delete notification of object org.apache.logging.log4j2:component=ContextSelector,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=ContextSelector
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+Send delete notification of object org.apache.logging.log4j2:component=Loggers,name=,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Loggers,name=
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=rolling,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=rolling
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+name = org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
+Send delete notification of object org.apache.logging.log4j2:component=Appenders,name=stdout,type=7c3df479
+JMX.mbean.unregistered org.apache.logging.log4j2:type=7c3df479,component=Appenders,name=stdout
