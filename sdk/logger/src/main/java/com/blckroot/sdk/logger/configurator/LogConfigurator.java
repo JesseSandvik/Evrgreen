@@ -3,6 +3,7 @@ package com.blckroot.sdk.logger.configurator;
 import com.blckroot.sdk.operating.system.service.OperatingSystemService;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.LoggerContext;
 import org.apache.logging.log4j.core.config.builder.api.*;
 import org.apache.logging.log4j.core.config.builder.impl.BuiltConfiguration;
 

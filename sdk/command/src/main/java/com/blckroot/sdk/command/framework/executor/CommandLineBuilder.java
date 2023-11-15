@@ -31,7 +31,6 @@ class CommandLineBuilder {
 
     public picocli.CommandLine build() {
         addStandardUsageHelpOption(rootCommandSpec);
-        System.out.println(rootFrameworkBaseCommand.getVersion());
         if (rootFrameworkBaseCommand.getVersion() != null) {
             addStandardVersionHelpOption(rootCommandSpec);
         }
