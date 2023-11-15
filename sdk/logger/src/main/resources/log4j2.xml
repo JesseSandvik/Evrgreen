@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d [%t] %-5level %logger{36} - %msg%n%throwable"/>
+        </Console>
+<!--        <Syslog name="Syslog"-->
+<!--                format="RFC5424" host="localhost" port="514"-->
+<!--                protocol="TCP" facility="local3" connectTimeoutMillis="10000"-->
+<!--                reconnectionDelayMillis="5000">-->
+<!--        </Syslog>-->
+<!--        <Failover name="FailoverAppender" primary="Syslog">-->
+<!--            <Failovers>-->
+<!--                <AppenderRef ref="ConsoleAppender" />-->
+<!--            </Failovers>-->
+<!--        </Failover>-->
+    </Appenders>
+    <Loggers>
+        <Root level="TRACE" additivity="true">
+            <AppenderRef ref="ConsoleAppender" />
+        </Root>
+    </Loggers>
+</Configuration>

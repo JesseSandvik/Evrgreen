@@ -17,16 +17,17 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.blckroot</groupId>
+            <artifactId>blckroot-sdk-operating-system</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-layout-template-json</artifactId>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
