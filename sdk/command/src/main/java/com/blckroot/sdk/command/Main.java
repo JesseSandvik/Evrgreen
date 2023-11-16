@@ -11,14 +11,14 @@ import static java.lang.System.Logger.Level.*;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         LogConfigurator logConfigurator = new LogConfigurator();
         logConfigurator.enableConsoleLogging(true);
         logConfigurator.enableRollingFileSystemLogging(true);
         logConfigurator.initializeLogger();
         logConfigurator.setLevel(TRACE);
 
-        String propertiesFileDirectory = "src/test/resources/";
+        String propertiesFileDirectory = "command/src/test/resources/";
 
         PositionalParameter positionalParameter = new PositionalParameter();
         positionalParameter.setValue("Hello, World!");
@@ -28,8 +28,9 @@ public class Main {
         FrameworkBaseCommand command = new SetAttributesFromPropertiesFile(
                 new ExecutePlugin(testCommand), propertiesFileDirectory);
 
-        CommandExecutor commandExecutor = new CommandExecutor(command);
-        int exitCode = commandExecutor.execute(args);
+//        CommandExecutor commandExecutor = new CommandExecutor(command);
+//        int exitCode = commandExecutor.execute(args);
+        int exitCode = command.call();
         System.exit(exitCode);
     }
 }
