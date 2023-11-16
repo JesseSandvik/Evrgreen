@@ -6,10 +6,4 @@ public class TestACommand extends FrameworkCommand {
     public TestACommand() {
         super("testA");
     }
-
-    @Override
-    public Integer call() throws Exception {
-        System.out.println("[ SUCCESSFULLY EXECUTED TEST A COMMAND ]");
-        return 0;
-    }
 }

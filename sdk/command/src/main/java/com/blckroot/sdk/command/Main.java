@@ -10,13 +10,12 @@ import com.blckroot.sdk.logger.configurator.LogConfigurator;
 import static java.lang.System.Logger.Level.*;
 
 public class Main {
-
     public static void main(String[] args) throws Exception {
         LogConfigurator logConfigurator = new LogConfigurator();
         logConfigurator.enableConsoleLogging(true);
         logConfigurator.enableRollingFileSystemLogging(true);
         logConfigurator.initializeLogger();
-        logConfigurator.setLevel(TRACE);
+        logConfigurator.setLevel(ERROR);
 
         String propertiesFileDirectory = "command/src/test/resources/";
 

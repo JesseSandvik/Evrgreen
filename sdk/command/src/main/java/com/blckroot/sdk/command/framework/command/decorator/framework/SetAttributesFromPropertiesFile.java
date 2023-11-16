@@ -149,6 +149,7 @@ public class SetAttributesFromPropertiesFile extends FrameworkCommandDecorator {
     }
 
     private void setAttributes(FrameworkBaseCommand frameworkBaseCommand) {
+        LOGGER.log(DEBUG, "setting attributes for framework command: " + frameworkBaseCommand.getName());
         String propertiesFilePath = propertiesFileDirectory + frameworkBaseCommand.getName() + ".properties";
 
         FileValidator fileValidator = new FileValidator();
