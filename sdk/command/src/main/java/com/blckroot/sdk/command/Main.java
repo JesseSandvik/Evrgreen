@@ -15,7 +15,7 @@ public class Main {
         logConfigurator.enableConsoleLogging(true);
         logConfigurator.enableRollingFileSystemLogging(true);
         logConfigurator.initializeLogger();
-        logConfigurator.setLevel(ERROR);
+        logConfigurator.setLevel(TRACE);
 
         String propertiesFileDirectory = "command/src/test/resources/";
 
@@ -27,9 +27,9 @@ public class Main {
         FrameworkBaseCommand command = new SetAttributesFromPropertiesFile(
                 new ExecutePlugin(testCommand), propertiesFileDirectory);
 
-//        CommandExecutor commandExecutor = new CommandExecutor(command);
-//        int exitCode = commandExecutor.execute(args);
-        int exitCode = command.call();
+        CommandExecutor commandExecutor = new CommandExecutor(command);
+        int exitCode = commandExecutor.execute(args);
+//        int exitCode = command.call();
         System.exit(exitCode);
     }
 }
